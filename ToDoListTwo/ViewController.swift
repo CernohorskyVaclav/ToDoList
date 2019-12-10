@@ -18,13 +18,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //tvForBuddies.delegate = self
+        tvForBuddies.delegate = self
         tvForBuddies.dataSource = self
         // Do any additional setup after loading the view.
     }
     public func printTask() {
         print(taskService.getArray())
-        //tvForBuddies.reloadData()
+        tvForBuddies.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -36,7 +36,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = TaskService.instance.getArray()[indexPath.item]
         return cell
     }
-    
     
     
     /*if(awesomeField[1] == "") {

@@ -29,9 +29,8 @@ class SecondaryViewController: UIViewController {
         
         taskService.addArray(textTask: tfForHoes.text ?? "")
         //print(taskService.getArray())
-        
         svc.printTask()
-        svc.tvForBuddies.reloadData()
+        
         
         //awesomeField.append(text)
         //print(awesomeField)
